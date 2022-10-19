@@ -1,12 +1,12 @@
 # ImageMapView   [![](https://jitpack.io/v/sahooz/ImageMapView.svg)](https://jitpack.io/#sahooz/ImageMapView)
 
-[ENGLISH](README_en.md)  
+[中文](README.md)
 
-类HTML map标签图片热点的Android控件
+An HTML map like widget in an Android view.
 
-## 添加依赖
+## Add dependency
 
-1. 在项目级相关文件(build.gradle/settings.gradle)添加以下设置:  
+1. Add this in your root project gradle setting file(build.gradle/settings.gradle):
 
 ```groovy
 allprojects {
@@ -25,7 +25,7 @@ dependencyResolutionManagement {
 }
 ```
 
-2. 在Module级build.gradle文件添加依赖：    
+2. Add the dependency in your module build.gradle
 
 ```groovy
 dependencies {
@@ -34,9 +34,9 @@ dependencies {
 }
 ```
 
-## 使用
+## Usage
 
-1. 创建一个xml，用于描述图片热点信息，目前支持矩形、圆形和多边形  
+1. Create a xml file that describe your map
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -52,7 +52,7 @@ dependencies {
 </map>
 ```  
 
-2. 在布局文件中添加 ImageMapView:  
+2. Add ImageMapView to your layout xml file:
 
 ```xml
 <com.xinyanruanjian.imagemapview.ImageMapView
@@ -64,7 +64,7 @@ dependencies {
     app:imageMap="@xml/map"/>
 ```
 
-3. findViewById并设置listener:  
+3. findViewById and set the listener:
 ```kotlin
 findViewById<ImageMapView>(R.id.imv).setOnAreaClickListener { imv, area ->
     Log.i(javaClass.simpleName, "Area was clicked: $area")
@@ -72,7 +72,7 @@ findViewById<ImageMapView>(R.id.imv).setOnAreaClickListener { imv, area ->
 }
 ```
 
-## 开源协议
+## LICENSE
 
 ```
 MIT License
