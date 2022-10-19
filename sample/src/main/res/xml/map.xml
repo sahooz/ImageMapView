@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns:android="http://schemas.android.com/apk/res/android"
+    width="500"
+    height="500">
+    <!--left, top, right, bottom-->
+    <area name="Rect" shape="rect" coords="62,49,193,123" id="@+id/shape_rect"/>
+    <!--x, y, radius-->
+    <area name="Circle" shape="circle" coords="211,262,50" id="@+id/shape_circle"/>
+    <!--x,y,x,y,x,y...-->
+    <area name="Poly" shape="poly" coords="300,332,360,288,421,332,399,404,322,404" id="@+id/shape_poly"/>
+</map>
