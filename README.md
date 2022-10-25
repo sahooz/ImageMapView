@@ -30,7 +30,7 @@ dependencyResolutionManagement {
 ```groovy
 dependencies {
     //...
-    implementation 'com.github.sahooz:ImageMapView:1.0'
+    implementation 'com.github.sahooz:ImageMapView:1.0.1'
 }
 ```
 
